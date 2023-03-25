@@ -26,7 +26,7 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 fruitvice_normalized=pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruitvice_normalized)
 streamlit.header('fruitvice fruit advice')
-fruit_choice=streamlit.textinput('whta fruit u like to informed about','Kiwi')
+fruit_choice=streamlit.text_input('whta fruit u like to informed about','Kiwi')
 streamlit.write('user enterded',fruit_choice)
 #fruityvice_response=request.get("https://www.fruityvice.com/api/fruit"+fruit_choice)
 
