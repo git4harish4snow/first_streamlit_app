@@ -28,10 +28,10 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon"
 fruitvice_normalized=pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruitvice_normalized)
 streamlit.header('fruitvice fruit advice')
-fruit_choice=streamlit.text_input('whta fruit u like to informed about','Kiwi')
-streamlit.write('user enterded',fruit_choice)
-fruit_choice1=streamlit.text_input('whta fruit u like to informed about','Apple')
-streamlit.write('user enterded',fruit_choice)
+#fruit_choice=streamlit.text_input('whta fruit u like to informed about','Kiwi')
+#streamlit.write('user enterded',fruit_choice)
+#fruit_choice1=streamlit.text_input('whta fruit u like to informed about','Apple')
+#streamlit.write('user enterded',fruit_choice)
 
 #fruityvice_response=request.get("https://fruityvice.com/api/fruit/"+fruit_choice)
 #fruityvice_response=request.get("https://fruityvice.com/api/fruit/watermelon")
@@ -41,6 +41,9 @@ fruityvice_response = requests.get("https://fruityvice.com/api/fruit/"+fruit_cho
 fruitvice_normalized=pandas.json_normalize(fruityvice_response.json())
 
 streamlit.dataframe(fruitvice_normalized)
+
+fruit_choice1=streamlit.text_input('whta fruit u like to informed about','Apple')
+streamlit.write('user enterded',fruit_choice)
 
 #my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cur = my_cnx.cursor()
@@ -52,8 +55,3 @@ streamlit.dataframe(fruitvice_normalized)
 fruit_choice2=streamlit.text_input('whta fruit u like to informed about','Kiwi')
 
 streamlit.write('user enterded',fruit_choice2)
-
-
-
-
-
