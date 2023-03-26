@@ -3,7 +3,7 @@ import pandas
 import requests
 streamlit.title('my parents new healthy dinner')
 streamlit.header('breakfast menu')
-streamlit.text('	😄Omega 3 & Blueberry Oatmeal')
+streamlit.text('Omega 3 & Blueberry Oatmeal')
 streamlit.text('Kale, Spinach & Rocket Smoothie')
 streamlit.text('Hard-Boiled Free-Range Egg')
 streamlit.header('Build ur own fruit smothiee')
@@ -44,7 +44,7 @@ my_cur.execute("select * from fruit_load_list")
 #my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
 my_data_row = my_cur.fetchone()
-streamlit.text=("fruit load list contains")
+streamlit.text("fruit load list contains")
 
 streamlit.text(my_data_row)
 
