@@ -39,6 +39,6 @@ fruit_choice1=streamlit.text_input('whta fruit u like to informed about','Apple'
 streamlit.write('user enterded',fruit_choice)
 
 
-fruit_choice2=streamlit.text_input('whta fruit u like to informed about','Kiwi')
+fruit_choice3=streamlit.text_input('whta fruit u like to informed about','Kiwi')
 
-streamlit.write('user enterded',fruit_choice2)
+streamlit.write('user enterded',fruit_choice3)
